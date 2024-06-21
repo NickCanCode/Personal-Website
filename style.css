@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+html,
+body {
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ededed;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: #0e1739;
+  scroll-behavior: smooth;
+  /* Enable smooth scrolling for the entire page */
+}
+
+a {
+  color: #3656d3;
+}
+
+nav {
+  position: fixed;
+  /* Make the nav stick to the top */
+  top: 0;
+  /* Position it at the top of the viewport */
+  left: 0;
+  /* Position it to the left edge of the viewport */
+  width: 100%;
+  /* Make it full width */
+  background-color: white;
+  /* Optional background color */
+  padding: 10px;
+  /* Add padding for spacing */
+  display: flex;
+  /* Enable flexbox for the nav */
+  justify-content: center;
+  /* Center the content horizontally */
+  z-index: 100;
+  /* Ensure the nav stays on top of other elements */
+}
+
+nav ul {
+  /* Target the unordered list within the nav */
+  list-style: none;
+  /* Remove bullet points */
+  padding: 0;
+  /* Remove default list padding */
+  display: flex;
+  /* Arrange list items in a row */
+}
+
+.nav-item {
+  margin: 0 10px;
+  /* Add spacing between nav items */
+}
+
+main {
+  flex-grow: 1;
+  /* Allow main content to take up available space */
+}
+
+.item {
+  margin-bottom: 3%;
+  /* makes it so that the items are spaced out */
+  border-style: solid;
+  border-width: 1px;
+  padding: 1%;
+}
+
+.contactLi {
+  display: inline;
+
+}
+
+.contactLi img {
+  margin-bottom: 3%;
+  height: 4%;
+  width: 4%;
+}
+
+.contactLi:hover img {
+  height: 4.5%;
+  width: 4.5%;
+  margin-bottom: 2.5%;
+}
+
+#findMe ul {
+  list-style: none;
+  /* Removes bullet points */
+  padding: 0;
+  /* Removes default list padding */
+}
+
+#findMe li {
+  margin-bottom: 10px;
+  /* Adds spacing between list items */
+}
+
+#findMe a {
+  text-decoration: none;
+  /* Removes underlines from links */
+  color: #3656d3;
+  /* Sets link color to blue */
+}
+
+
+#gallery .gallery-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  justify-content: center;
+  /* Keep the images centered */
+  padding: 10px;
+  width: 90%;
+  /* Make the gallery take up full width */
+  margin: 0 auto;
+  /* Center the gallery horizontally within its parent */
+}
+
+#gallery .gallery-image {
+  width: 300px;
+  /* Set image width */
+  height: 200px;
+  /* Set image height */
+  object-fit: cover;
+  /* Maintain aspect ratio and cover the container */
+  margin-right: 10px;
+  /* Add space between images */
+}
+
+.gallery-image {
+  transition: 0.1s ease;
+}
+
+.gallery-image:hover {
+  border-style: solid;
+  border-color: #3656d3;
+  border-width: 5px;
+}
+
+
+#testimonials .testimonial-box {
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  /* Add a transition for smooth change */
+}
+
+#testimonials .testimonial-box:hover {
+  background-color: #3656d3;
+  color: white;
+  /* Change background color on hover */
+}
+
+footer {
+  /* Optional background color */
+  padding: 20px;
+  text-align: center;
+  /* Center the content */
+  width: 100%;
+  /* Full width */
+}
+
+/* For the blog entries */
+.blog-container {
+  display: inline-block;
+  width: 600px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  /* Add a transition for smooth change */
+}
+
+.blog-container:hover {
+  background-color: #3656d3;
+  color: white;
+  /* Change background color on hover */
+}
+
+#projectList {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-item {
+  display: inline-block;
+  width: 50%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  /* Add a transition for smooth change */
+}
+
+.project-item:hover {
+  background-color: #3656d3;
+  color: white;
+  /* Change background color on hover */
+}
+
+.project-item:hover a {
+  color: white;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  .contactLi {
+    display: inline;
+
+  }
+
+  .contactLi img {
+    margin-bottom: 3%;
+    height: 14%;
+    width: 14%;
+  }
+
+  .contactLi:hover img {
+    height: 14.5%;
+    width: 14.5%;
+    margin-bottom: 2.5%;
+  }
+
+  #gallery .gallery-container {
+    display: flex;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    white-space: nowrap;
+    /* Prevent images from wrapping */
+    justify-content: flex-start;
+    /* Align images to the left */
+    padding: 10px;
+    /* Add padding for visual spacing */
+  }
+
+  #testimonials .testimonial-box {
+    display: inline-block;
+    width: 50%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* Add a transition for smooth change */
+  }
+
+  #testimonials .testimonial-box:hover {
+    background-color: #3656d3;
+    color: white;
+    /* Change background color on hover */
+  }
+
+  /* For the blog entries */
+  .blog-container {
+    display: inline-block;
+    width: 70%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    /* Add a transition for smooth change */
+  }
+
+
+
+
+}
